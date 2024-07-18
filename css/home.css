@@ -450,7 +450,6 @@ a {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #c2185b;
   }
   
   .nav-list a {
@@ -460,7 +459,6 @@ a {
     font-size: 2rem;
     color: #fff;
     display: flex;
-    background-color: #FF731D;
     margin: 0rem;
   }
   

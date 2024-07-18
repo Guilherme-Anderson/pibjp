@@ -40,95 +40,10 @@
     background-color: var(--backgound);
   }
 
-  /* -------------------------- Inicio ------------------------ */
-.inicio {  
-    text-align: center;
-  }
-  
-.inicio h1 {
-    font-family: "Oswald";
-    font-size: 3.6rem;
-    color: var(--rosa);
-    margin-bottom: 14rem;
-  }
-
-  /* -------------------------- Rodape Superior ------------------------ */
-
-  .cabecalho{
-    background-color: var(--laranja);
-    width: 100%;
-    height: 16rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu {
-    width: 136rem;
-    height: 16rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-logo img {
-    margin-top: 2rem;
-    height: 8rem;
-}
-
-  .menu-logo {
-    height: 8rem;
-    width: 136rem;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-  }
-
-  .menu-logo h1{
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    padding-left: 2rem ;
-  }
-  
-  .menu-opcoes {
-    height: 8rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-;
-  }
-
-  .menu-opcoes a {
-    text-decoration: none; 
-    color: inherit;        
-    border: none; 
-
-    font-family: "Bebas Neue", sans-serif;
-    color: white;
-    font-weight: 100;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 2.5rem;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    height: 100%;
-    text-align:center;
-  }
-
-  .menu-opcoes a:hover {
-    background-color: #2F0682;
-    transition: background-color 0.5s ease;
-  }
-
-
    /* -------------------------- Corpo ------------------------ */
-.corpo{
+
+@media screen and (min-width: 750px){
+  .corpo{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -191,100 +106,72 @@
 .dizimos-dados h1{
   font-size: 7rem;
 }
-
-
-   /* -------------------------- Rodape Inferior ------------------------ */
-
-.rodape {
-    width: 100%;
-    height: 32rem;
-    background-color: var(--laranja);
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 20rem;
-    padding-right: 20rem; 
 }
 
-.rodape-logo img{
-    height: 8rem;
+@media screen and (max-width: 750px ){
+
+.wrapper{
+  background-color: var(--backgound);
 }
 
-.sobre-nos {
-    width: 60rem;
-    height: 32rem;
-
-    margin-left: 3rem;
-    margin-right: 3rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+.corpo{
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 80rem;
 }
 
-.sobre-nos h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 200;
-    color: white;
-    font-size: 3rem;
-    padding: 1rem;
-    padding-bottom: 3rem;
-}
-
-.sobre-nos h2 {
-    color: white;
-    font-weight: 100;
-    font-size: 1.4rem;
-    text-align: left;
-    height: 12rem;
-}
-
-.siga-nos {
-    width: 60rem;
-    height: 32rem;
-
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-.siga-nos h1{
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 200;
-    color: white;
-    font-size: 3rem;
-    padding: 1rem;
-    padding-bottom: 3rem;
-}
-
-.rodape-links{
-    height: 12rem;
-}
-
-.social {
+.dizimos{
   display: flex;
-  justify-content: center;
-  align-items:start;
-  font-size: 3rem;
-  height: 12rem;
+  flex-direction: column;
+  align-items: center;
+}
+.dizimos h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-size: 5.6rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.dizimos-infos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.dizimos h2{
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.dizimos-qrcode{
+  background-color: #2F0682;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 2rem;
+}
+
+.dizimos-dados h1 {
+  font-size: 4rem;
 
 }
-.social a {
-  color: white;
-  text-decoration: none;
-  margin: 1rem;
+
+.dizimos-dados h2{
+  font-size: 1.6rem;
+  padding: 0;
 }
-.social:hover a {
-  opacity: 0.3;
-  transition: 0.3s;
+
+.dizimos-dados hr{
+  border: none;
+  height: 0;
+  background-color:white;
+  width: 80%; /* Largura da linha */
+  margin: 1rem auto; /* Espaço acima e abaixo da linha e centralizar */
 }
-.social:hover a:hover {
-  opacity: 1;
-  transition: 0.3s;
+}  
+@media (max-width: 750px) {
+  
 }
