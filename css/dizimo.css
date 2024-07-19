@@ -42,25 +42,27 @@
 
    /* -------------------------- Corpo ------------------------ */
 
+   .corpo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    height: auto;
+    background-color: var(--backgound);
+     }
+
 @media screen and (min-width: 750px){
   .corpo{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:white;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .dizimos {
-  width: 136rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .dizimos h1{
@@ -104,7 +106,25 @@
 }
 
 .dizimos-dados h1{
-  font-size: 7rem;
+  font-size: 5rem;
+}
+.dizimos-dados h2{
+  font-size: 2rem;
+}
+.corpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.dizimos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 5rem;
 }
 }
 
@@ -115,22 +135,26 @@
 }
 
 .corpo{
-  background-color: white;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  height: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dizimos{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .dizimos h1{
   font-family: "Bebas Neue", sans-serif;
   font-weight: 200;
   font-size: 5.6rem;
-  padding-top: 3rem;
   text-align: center;
 }
 
@@ -152,11 +176,11 @@
   width: 30rem;
   height: 30rem;
   border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 
 .dizimos-dados h1 {
-  font-size: 4rem;
-
+  font-size: 3.6rem;
 }
 
 .dizimos-dados h2{
@@ -172,6 +196,21 @@
   margin: 1rem auto; /* Espaço acima e abaixo da linha e centralizar */
 }
 }  
-@media (max-width: 750px) {
-  
+
+@media screen and (min-width: 1260px){
+  .corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dizimos{
+    max-width: 126rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 5rem;
+  }
 }

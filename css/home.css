@@ -21,6 +21,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  *:focus {
+    outline: none;
+  }
   
   body,html {
     width: 100%;
@@ -39,17 +43,23 @@
     background-color: var(--backgound);
   }
 
+  .corpo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    height: auto;
+     }
 @media screen and (min-width: 750px){
 
   /* -------------------------- Rodape Superior ------------------------ */
   .header {
     background: var(--laranja);
-    padding-inline: 2rem;
+    padding-inline: 1rem;
   }
   
   .nav {
     width: 100%;
-    height: 70px;
+    height: 9rem;
     margin-inline: auto;
   
     display: flex;
@@ -58,20 +68,20 @@
   }
   
   .logo img{
-    height: 4.8rem;
+    width: 18rem;
   }
   
   .nav-list {
     display: flex;
-    gap: 2rem;
+    gap: 1.7rem;
     list-style: none;
   }
   
   .nav-list a {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 200;
-    font-size: 2rem;
-    color: #fff;
+    font-size: 2.2rem;
+    color: white;
     padding-block: 1.6rem;
     text-decoration: none;
     display: flex;
@@ -96,11 +106,13 @@
     position: relative;
     transition: 0.3s;
   }
+
    /* -------------------------- Rodape Inferior ------------------------ */
 .corpo{
     width: 100%;
-    height: 80rem;
+    height: auto;
 }
+
    /* -------------------------- Rodape Inferior ------------------------ */
 
 .rodape {
@@ -221,14 +233,19 @@ a {
   text-decoration: none;
 }
 
+*{
+  outline: none;
+  box-shadow: none;
+}
+
 .header {
   background: var(--laranja);
-  padding-inline: 16px;
+  padding-inline: 1.4rem;
 }
 
 .nav {
-  max-width: 1280px;
-  height: 70px;
+  max-width: 128rem;
+  height: 6rem;
   margin-inline: auto;
 
   display: flex;
@@ -237,7 +254,7 @@ a {
 }
 
 .logo img{
-  height: 48px;
+  height: 4rem;
 }
 
 .nav-list {
@@ -303,15 +320,15 @@ a {
   }
 
   .nav-list li:nth-child(1) a {
-    transition: 0.5s 0.2s;
+    transition: 0.3s 0.1s;
   }
 
   .nav-list li:nth-child(2) a {
-    transition: 0.5s 0.4s;
+    transition: 0.3s 0.2s;
   }
 
   .nav-list li:nth-child(3) a {
-    transition: 0.5s 0.6s;
+    transition: 0.3s 0.3s;
   }
 
   /* Estilos ativos */
@@ -344,25 +361,26 @@ a {
 
   .rodape {
     width: 100%;
-    height: 50rem;
+    height: 40rem;
     background-color: var(--laranja);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
 
 }
 
   .rodape-logo img{
-      height: 5.8rem;
-      margin-top: 3rem;
-      margin-bottom: 4.6rem;
+      height: 5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
   }
 
   .sobre-nos {
-    height: 20rem;
-    padding-top: 2rem;
+    height: 16rem;
   }
 
   .sobre-nos h1{
@@ -374,7 +392,6 @@ a {
   }
 
   .sobre-nos h2 {
-    margin-top: 1rem;
     color: white;
     font-weight: 100;
     font-size: 1.4rem;
@@ -384,15 +401,14 @@ a {
   }
 
   .siga-nos {
-    height: 32rem;
-
+    height: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
   .siga-nos h1{
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 200;
     color: white;
@@ -403,7 +419,7 @@ a {
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    height: 12rem;
+    height: 8rem;
   }
   .social a {
     color: white;
@@ -429,23 +445,17 @@ a {
     border: 0;
   }
   
-  .header {
-    background: var(--laranja);
+  .logo img{
+    width: 36rem;
   }
-  
   .nav {
     max-width: 128rem;
-    height: 70px;
     margin-inline: auto;
   
     display: flex;
     justify-content: space-between;
   }
-  
-  .logo img{
-    height: 4.8rem;
-  }
-  
+    
   .nav-list {
     list-style: none;
     display: flex;
@@ -456,7 +466,7 @@ a {
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #fff;
     display: flex;
     margin: 0rem;
@@ -484,7 +494,6 @@ a {
    /* -------------------------- Rodape Inferior ------------------------ */
 .corpo{
     width: 100%;
-    height: 80rem;
 }
    /* -------------------------- Rodape Inferior ------------------------ */
 
@@ -501,7 +510,7 @@ a {
 }
 
 .rodape-logo img{
-    height: 8rem;
+    height: 6rem;
 }
 
 .sobre-nos {

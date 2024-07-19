@@ -1,0 +1,182 @@
+:root {
+    --primary-color: hsl(170, 100%, 26%);
+    --headline: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 9%, 31%);
+  
+    --brand-beige: hsl(39, 100%, 97%);
+    --brand-light: hsl(148, 23%, 89%);
+  
+    --backgound: hsla(192, 15%, 94%, 1);
+    --rosa: #c2185b;
+    --azul: #2F0682;
+    --laranja: #FF731D;
+    --fonte-roxo: hsl(262, 47%, 55%);
+    font-size: 62.5%; 
+  
+    --nav-height: 7.2rem;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,html {
+    width: 100%;
+    height: 100%;
+  
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    background-color: var(--backgound);
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: var(--backgound);
+  }
+
+   /* -------------------------- Corpo ------------------------ */
+
+.corpo{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  height: auto;
+   }
+
+.a-igreja p{
+  box-sizing: border-box;
+}
+@media screen and (min-width: 750px){
+  .corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .a-igreja{
+    max-width: 126rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 5rem;
+  }
+
+  .a-igreja h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 9rem;
+  
+  }
+
+  .foto-igreja{
+    width: 80%;
+    height: 40rem;
+    background-color: var(--azul);
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .a-igreja h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 4rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 750px ){
+  .corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .a-igreja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+ 
+  .a-igreja h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 5.6rem;
+  }
+
+  .foto-igreja{
+    background-color: #2F0682;
+    width: 36rem;
+    height: 18rem;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .a-igreja h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 2.6rem;
+    width: 100%;
+    padding-bottom: 0.2rem;
+    padding-top: 1.2rem;
+ 
+  }
+}  
+
+@media screen and (min-width: 1260px){
+  .corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .a-igreja{
+    max-width: 126rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 5rem;
+  }
+
+  .a-igreja h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 9rem;
+  
+  }
+
+  .foto-igreja{
+    width: 80rem;
+    height: 40rem;
+    background-color: var(--azul);
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .a-igreja h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 4rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 0.4rem;
+  }
+
+}
