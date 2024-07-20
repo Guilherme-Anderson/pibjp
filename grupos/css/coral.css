@@ -1,0 +1,214 @@
+:root {
+    --primary-color: hsl(170, 100%, 26%);
+    --headline: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 9%, 31%);
+  
+    --brand-beige: hsl(39, 100%, 97%);
+    --brand-light: hsl(148, 23%, 89%);
+  
+    --backgound: hsla(192, 15%, 94%, 1);
+    --rosa: #c2185b;
+    --azul: #2F0682;
+    --laranja: #FF731D;
+    --fonte-roxo: hsl(262, 47%, 55%);
+    font-size: 62.5%; 
+  
+    --nav-height: 7.2rem;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  body,html {
+    width: 100%;
+    height: 100%;
+    
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    background-color: var(--backgound);
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: var(--backgound);
+  }
+
+   /* -------------------------- Corpo ------------------------ */
+   .corpo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    height: auto;
+    background-color: var(--backgound);
+     }
+ 
+
+@media screen and (min-width: 750px){
+
+}
+
+@media screen and (max-width: 750px ){
+  .coral{
+    background-color: white;
+    border-radius: 2em;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+  }
+
+  .coral h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4.6rem;
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .coral h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.2rem;
+    padding-top:0;
+    margin: 0;
+
+    width: 100%;
+    text-align: center;
+
+    padding-bottom: 2rem;
+  }
+
+  .coral h1, .coral h2{
+    margin: 0;
+    line-height: 3rem;
+  }
+
+  .musica h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+}  
+
+  .musica p{
+    padding-bottom: 1rem;
+  }
+
+  
+  .coral button{
+    background: none; 
+    border: none;    
+    padding: 0;      
+    cursor: pointer;  
+    font: inherit;    
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .container{
+    width: 100%;
+
+  }
+  .container h1, 
+  .letras h1{
+    font-size: 2.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    text-align:left;
+    padding-top: 2rem;
+  }
+
+  .letras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: left;
+    width: 100%;
+
+  }
+  .letras h1{
+    padding-bottom: 1rem;
+  }
+
+  .voice-selection{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+  }
+  
+  .voice-selection button{
+    padding: 0.5rem;
+    margin: 0;
+
+  }
+  .voice-selection button:hover {
+    background-color:var(--azul);
+    color: aliceblue;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+  }
+
+  .musicList{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    min-width: 30.1rem;
+    background-color: #2F0682;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  #texto{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+    text-align:center;
+    padding-top: 2rem;
+    color: white;
+  }
+  .musicList ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .musicList a{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+
+  .hidden {
+    display: none;
+}
+
+.letras button{
+  display: flex;
+  align-items: center;
+  justify-items: left;
+  width: 100%;
+}
+
+}
+@media screen and (min-width: 1260px){
+  
+
+}

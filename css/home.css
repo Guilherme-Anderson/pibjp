@@ -16,6 +16,22 @@
     --nav-height: 7.2rem;
   }
   
+  @font-face{
+    font-family: 'Bebas Neue' ;
+    src: url(/font/BebasNeue-Regular.ttf) format('truetype'),
+          url(/font/BebasNeue-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family: 'Roboto' ;
+    src: url(/font/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
   *{
     margin: 0;
     padding: 0;

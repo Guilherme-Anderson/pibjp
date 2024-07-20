@@ -1,0 +1,155 @@
+:root {
+    --primary-color: hsl(170, 100%, 26%);
+    --headline: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 9%, 31%);
+  
+    --brand-beige: hsl(39, 100%, 97%);
+    --brand-light: hsl(148, 23%, 89%);
+  
+    --backgound: hsla(192, 15%, 94%, 1);
+    --rosa: #c2185b;
+    --azul: #2F0682;
+    --laranja: #FF731D;
+    --fonte-roxo: hsl(262, 47%, 55%);
+    font-size: 62.5%; 
+  
+    --nav-height: 7.2rem;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  body,html {
+    width: 100%;
+    height: 100%;
+    
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    background-color: var(--backgound);
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: var(--backgound);
+  }
+
+   /* -------------------------- Corpo ------------------------ */
+   .corpo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    height: auto;
+    background-color: var(--backgound);
+     }
+ 
+
+@media screen and (min-width: 750px){
+
+}
+
+@media screen and (max-width: 750px ){
+  .coral{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+  }
+
+  .coral h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .musica h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+}  
+
+  .musica p{
+    padding-bottom: 1rem;
+  }
+
+  
+  .coral button{
+    background: none; 
+    border: none;    
+    padding: 0;      
+    cursor: pointer;  
+    font: inherit;    
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Estilo básico para a página */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+}
+
+input[type="password"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#bt-login {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#errorMessage {
+  color: red;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+  
+
+}
+@media screen and (min-width: 1260px){
+  
+
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="/grupos/css/coral.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <title>PIBJp</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header"> <!-- Header -->
+            <div class="nav"> <!-- nav -->
+                <a class="logo" href="/index.html">
+                    <img src="/assents/logo-nome.png" alt="logo igreja pib jardim palmares">
+                </a>
+                <button class="hamburger"></button>
+                <ul class="nav-list"> <!-- nav-list -->
+                    <li><a href="/aigreja.html">A igreja</a></li>
+                    <li><a href="/programacoes.html">Programação</a></li>
+                    <li><a href="/grupos.html">Grupos</a></li>
+                    <li><a href="https://www.youtube.com/@pibjardimpalmares">Assista online</a></li>
+                    <li><a href="dizimos.html">Dízimos & Ofertas</a></li>
+                </ul>   
+            </div>
+        </div>
+        <div class="corpo">
+            <div class="coral">
+                <h1>Cantanta de Natal</h1>
+                <h2>Um novo coração no Natal</h2>
+                <div class="container">
+                    <h1>Selecione a Sua Voz</h1>
+                    <select id="voiceSelect" onchange="selectVoice(this.value)">
+                        <option value="">Selecione a Voz</option>
+                        <option value="tenor">Tenor</option>
+                        <option value="contralto">Contralto</option>
+                        <option value="baixo">Baixo</option>
+                        <option value="soprano">Soprano</option>
+                    </select>
+                    
+                    <div id="musicList" class="hidden">
+                        <h2>Músicas para <span id="voiceType"></span></h2>
+                        <ul id="songsList"></ul>
+                    </div>
+                    
+                    <audio id="audioPlayer" controls></audio>
+                
+                </div>
+                <div class="letras">
+                    <h1>Selecione sua a letra: </h1>
+                    <button class="botao-musica" id="bt-musica-1" onclick="escondermusica(1)">1- O Motivo do Natal</button>
+                    <div class="musica" id="musica-1" style="display: none;">
+                        <p>Todos acupados sempre apressados a procurar presentes para dar, qual o mais bonito, qual o mais pedido, qual o que vai melhor impressionar, toda iluminada a cidade linda está lembrando que em Belém Jesus nosso Rei nasceu, numa noite assim.</p>
+                        <p>Mais o real motivo que temos pra celebrar, é que o Rei Menino nasceu pra nos salvar, em volto em panos sim nasceu, grande atenção não mereceu, foi há muito atrás que aconteceu, Cristo nasceu, veio pra nos dar a vida.</p>
+                        <p>Todos pela rua vão cantarolando chegou em fim a noite de Natal, todos procurando doces saborosos em toda a parte está feliz Natal, tão felizes as crianças brincam sem parar mais não esquecem a razão porque todos nós s’tamos a cantar.</p>
+                        <p>Pois o real motivo que temos pra celebrar, é que o Rei Menino nasceu pra nos salvar, em volto em panos sim nasceu, grande atenção não mereceu, foi há muito atrás que aconteceu, Cristo nasceu, veio pra nos dar a vida.</p>  
+                        <p>Hoje é Natal cantemos.</p>     
+                    </div>
+                    <button class="botao-musica" id="bt-musica-2" onclick="escondermusica(2)">2- Bendita Luz</button>
+                    <div class="musica" id="musica-2" style="display: none;">
+                        <p>Bendita luz eis a brilhar presente que do céu mandou o pai, bendito o rei que deus mandou o príncipe da paz que esperança traz.</p>
+                        <p>Ouço anjos a cantar ao menino de Belém e as montanhas alto além erguem seu louvor também.</p>
+                        <p>Gloria cantem nas alturas, gloria cantem nas alturas.</p>
+                        <p>Bendita luz (vozes masculinas).</p>
+                        <p>Eis a brilhar presente que do céu mandou o pai, natal, natal, natal, natal, nasceu o rei de Israel.</p>  
+                        <p>Natal, natal, natal, natal, nasceu o rei. Nasceu o rei, nasceu o rei de Israel (vozes femininas).</p>
+                        <p>Bendita luz, bendita luz é o rei de Israel (vozes masculinas).</p>
+                        <p>Coros de anjos cantem bem alegres, cantai vós ó santos lá do céu além gloria a Deus dai glorias nas alturas ó vinde adoremos ó vinde adoremos ó vinde adoremos ao senhor.</p>
+                        <p>Bendita luz eis a brilhar ó vinde adoremos ao senhor, bendita luz eis a brilhar presente que do céu mandou o pai, bendito o rei que deus mandou o príncipe da paz que esperança traz que esperança traz.</p>
+                        <p>Ouço os anjos a cantar, bendita luz, vinde adoremos, que deus mandou, que deus mandou seu nome é Cristo (vozes femininas).</p>
+                        <p>Bendita luz, natal, bendito rei, que deus mandou, que deus mandou, seu nome é Cristo (vozes masculinas).</p>                 
+                    </div>
+                    <button class="botao-musica" id="bt-musica-3" onclick="escondermusica(3)">3- Em breve</button>
+                    <div class="musica" id="musica-3" style="display: none;">
+                        <p>Em breve</p>     
+                    </div>
+                    <button class="botao-musica" id="bt-musica-4" onclick="escondermusica(4)">4- Em breve</button>
+                    <div class="musica" id="musica-4" style="display: none;">
+                        <p>Em breve</p>     
+                    </div>
+                    <button class="botao-musica" id="bt-musica-5" onclick="escondermusica(5)">5- Em breve</button>
+                    <div class="musica" id="musica-5" style="display: none;">
+                        <p>Em breve</p>     
+                    </div>
+                    <button class="botao-musica" id="bt-musica-6" onclick="escondermusica(6)">6- Em breve</button>
+                    <div class="musica" id="musica-6" style="display: none;">
+                        <p>Em breve</p>     
+                    </div>
+                    <button class="botao-musica" id="bt-musica-7" onclick="escondermusica(7)">7- Em breve</button>
+                    <div class="musica" id="musica-7" style="display: none;">
+                        <p>Em breve</p>     
+                    </div>
+                    <button class="botao-musica" id="bt-musica-8" onclick="escondermusica(8)">8- Em breve</button>
+                    <div class="musica" id="musica-8" style="display: none;">
+                        <p>Em breve</p>     
+                    </div>
+                    <button class="botao-musica" id="bt-musica-9" onclick="escondermusica(9)">9- Em breve</button>
+                    <div class="musica" id="musica-9" style="display: none;">
+                        <p>Em breve</p>     
+                    </div>
+                    
+                
+                </div>          
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="rodape-logo">
+                <a href="/index.html">
+                    <img src="/assents/logo-nome.png" alt="logo igreja pib jardim palmares">
+                    </a>
+            </div>
+            <div class="sobre-nos">
+                <h1>Sobre nós</h1>
+                <h2>Primeira Igreja Batista em Jardim Palmares - RJ. Avenida Roberto Moura, quadra 33, lote 05, Jardim Palmares, Paciência, Rio de Janeiro, RJ, Brazil  Numero: (21) 3404-9484 | Email: pib.jardimpalmares@gmail.com</h2>
+            </div>
+            <div class="siga-nos">
+                <h1>Siga-nos</h1>
+                <div class="social">
+                    <a href="https://www.facebook.com/pibjardimpalmares/?locale=pt_BR" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pib.jp/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@pibjardimpalmares" target="_blank">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="mailto:pib.jardimpalmares@gmail.com" target="_blank">
+                        <i class="fa fa-envelope-open"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="/app.js"></script>
+</body>
+</html>    
