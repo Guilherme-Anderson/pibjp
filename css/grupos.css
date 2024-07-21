@@ -57,8 +57,28 @@
 }
 
 @media screen and (max-width: 750px ){
+
+
+.grupo{
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  min-height: 50rem
 }
 
+
+.grupo h1{
+  padding-top:;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-size: 5rem;
+  padding-top: 3rem;
+}
+
+}
 @media screen and (min-width: 1260px){
   
 

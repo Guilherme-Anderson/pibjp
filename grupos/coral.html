@@ -13,13 +13,13 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header"> <!-- Header -->
-            <div class="nav"> <!-- nav -->
+        <div class="header"> 
+            <div class="nav"> 
                 <a class="logo" href="/index.html">
                     <img src="/assents/logo-nome.png" alt="logo igreja pib jardim palmares">
                 </a>
                 <button class="hamburger"></button>
-                <ul class="nav-list"> <!-- nav-list -->
+                <ul class="nav-list"> 
                     <li><a href="/aigreja.html">A igreja</a></li>
                     <li><a href="/programacoes.html">Programação</a></li>
                     <li><a href="/grupos.html">Grupos</a></li>
@@ -35,7 +35,7 @@
                 <div class="container">
                     <h1>Selecione a Sua Voz</h1>
                     <select id="voiceSelect" onchange="selectVoice(this.value)">
-                        <option value="">Selecione a Voz</option>
+                        <option value="">Escolha a voz aqui</option>
                         <option value="tenor">Tenor</option>
                         <option value="contralto">Contralto</option>
                         <option value="baixo">Baixo</option>
@@ -43,15 +43,15 @@
                     </select>
                     
                     <div id="musicList" class="hidden">
-                        <h2>Músicas para <span id="voiceType"></span></h2>
+                        <h2>Músicas para <span id="voiceType"></span>:</h2>
                         <ul id="songsList"></ul>
                     </div>
                     
-                    <audio id="audioPlayer" controls></audio>
+                    <audio class="audioPlayer" id="audioPlayer" controls></audio>
                 
                 </div>
                 <div class="letras">
-                    <h1>Selecione sua a letra: </h1>
+                    <h1>Selecione a letra: </h1>
                     <button class="botao-musica" id="bt-musica-1" onclick="escondermusica(1)">1- O Motivo do Natal</button>
                     <div class="musica" id="musica-1" style="display: none;">
                         <p>Todos acupados sempre apressados a procurar presentes para dar, qual o mais bonito, qual o mais pedido, qual o que vai melhor impressionar, toda iluminada a cidade linda está lembrando que em Belém Jesus nosso Rei nasceu, numa noite assim.</p>
@@ -101,8 +101,7 @@
                     <button class="botao-musica" id="bt-musica-9" onclick="escondermusica(9)">9- Em breve</button>
                     <div class="musica" id="musica-9" style="display: none;">
                         <p>Em breve</p>     
-                    </div>
-                    
+                    </div>    
                 
                 </div>          
             </div>

@@ -98,7 +98,8 @@
 }  
 
   .musica p{
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
   }
 
   
@@ -117,10 +118,16 @@
 
   .container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+
 
   }
   .container h1, 
-  .letras h1{
+  .letras h1,
+  #musicList h2{
     font-size: 2.6rem;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -157,7 +164,6 @@
 
   }
   .voice-selection button:hover {
-    background-color:var(--azul);
     color: aliceblue;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -168,7 +174,6 @@
     margin-left: 1rem;
     margin-right: 1rem;
     min-width: 30.1rem;
-    background-color: #2F0682;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
@@ -207,8 +212,43 @@
   width: 100%;
 }
 
+#voiceSelect{
+  font-family: "Roboto", sans-serif;
+  max-width: 80%;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+  #musicList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: left;
+  }
+
+  #musicList ul{
+    list-style: none;
+    text-decoration: none;
+    text-align: left;  
+    padding-left: 2rem; 
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  #musicList a{
+    text-decoration: none;
+    color: black;
+    text-align: left;  
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+
 }
 @media screen and (min-width: 1260px){
   
 
 }
+

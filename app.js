@@ -1,7 +1,18 @@
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav");
+const player = document.querySelector(".audioPlayer")
 
-hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+
+    if (player.style.display === "none") {
+        setTimeout(() => {
+            player.style.display = "block";
+        }, 400); // 1000ms = 1 segundo
+    } else {
+        player.style.display = "none";
+    }
+});
 
 
 function escondermusica(musicNumber) {
